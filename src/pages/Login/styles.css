@@ -1,0 +1,99 @@
+@media only screen and (max-width: 600px) {
+  .login-container {
+    height: 98%;
+    width: 95%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .login-container {
+    height: 98%;
+    width: 95%;
+  }
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-container {
+  border: 1px solid lightgrey;
+  background: #f2f6f9;
+  justify-content: space-between;
+}
+
+.login-heder {
+  background: #9966ff;
+  width: 100%;
+  padding: 30px 100px 30px 30px;
+}
+
+.login-heder h5 {
+  color: #fff;
+}
+
+.outside-circle {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+}
+
+.inside-circle {
+  width: 60px;
+  height: 60px;
+  background: #9966ff;
+  border-radius: 50%;
+}
+
+.input-class {
+  width: 100%;
+  background: #fff;
+}
+
+.input-field {
+  margin-top: 0.2rem;
+  margin-bottom: 0.1rem;
+}
+
+.input-field > input {
+  margin-left: 10px !important;
+}
+
+.input-border {
+  border: 0px !important;
+  height: 80px !important;
+  font-size: 23px;
+  font-weight: lighter;
+}
+
+.input-field > label {
+  margin-left: 10px;
+}
+
+.input-field > label:not(.label-icon).active {
+  transform: translateY(-4px) scale(0.8);
+}
+
+a {
+  color: #9966ff;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-style {
+  width: 90% !important;
+  height: 60px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions-container {
+  width: 100% !important;
+  margin-bottom: 100px;
+}
