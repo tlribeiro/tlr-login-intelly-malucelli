@@ -17,7 +17,7 @@ class Login extends Component {
       //Realiza a chamada na API de Login para validar os dados de acesso.
       //O resultado é um JWT Token com Status HTTP 200.
       axios.post(
-        'http://tlr-intelly-malucelli-api.sa-east-1.elasticbeanstalk.com/api/v1.0/login',
+        'https://api.promocoes.curitiba.br/api/v1.0/login',
         loginDto
       ).then(response => { 
           //Valida o resultado da requisição.

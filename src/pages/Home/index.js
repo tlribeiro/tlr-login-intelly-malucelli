@@ -13,7 +13,7 @@ class Login extends Component {
       const token = sessionStorage.getItem('token');
       
       //Realiza a chamada a api.
-       const userData = await axios.get('http://tlr-intelly-malucelli-api.sa-east-1.elasticbeanstalk.com/api/v1.0/users/me', {
+       const userData = await axios.get('https://api.promocoes.curitiba.br/api/v1.0/users/me', {
           headers: { Authorization: `Bearer ${token}` }
        });
 
