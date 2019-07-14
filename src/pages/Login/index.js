@@ -6,7 +6,7 @@ class Login extends Component {
   //Estado com os dados para a tela de login.
   state = { login: '', pass: '' };
   //Evento do click do botão.
-  onClickBtn = async () => {
+  onClickBtn = () => {
     try {
       //JSON para os dados do login.
       const loginDto = {
@@ -16,7 +16,7 @@ class Login extends Component {
 
       //Realiza a chamada na API de Login para validar os dados de acesso.
       //O resultado é um JWT Token com Status HTTP 200.
-      await axios.post(
+      axios.post(
         'http://tlr-intelly-malucelli-api.sa-east-1.elasticbeanstalk.com/api/v1.0/login',
         loginDto
       ).then(response => { 
